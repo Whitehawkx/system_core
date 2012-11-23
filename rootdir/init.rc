@@ -386,9 +386,6 @@ on boot
     setprop net.tcp.buffersize.evdo    4096,87380,563200,4096,16384,262144
     setprop net.tcp.buffersize.evdo_b  4096,87380,704512,4096,16384,262144
 
-# Run sysinit
-    exec /system/bin/sysinit
-
     class_start core
     class_start main
 
