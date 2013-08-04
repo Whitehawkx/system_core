@@ -3,10 +3,6 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-ifeq ($(HAVE_SELINUX),true)
-LOCAL_CFLAGS += -DHAVE_SELINUX
-endif
-
 LOCAL_SRC_FILES:= fs_mgr.c fs_mgr_verity.c
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include
