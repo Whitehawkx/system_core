@@ -1071,7 +1071,8 @@ static int charging_mode_booting(void)
         return 0;
 
     close(f);
-    return ('1' == cmb);#endif
+    return ('1' == cmb);
+#endif
 }
 
 int main(int argc, char **argv)
